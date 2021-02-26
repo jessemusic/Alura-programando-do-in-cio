@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<h3>Álcool ou Gasolina?</h3>
+<script>
+    document.write("Seu carro tem um tanque de 40 litros. Com gasolina e usando <br>");
+    document.write("todo o tanque você fez um caminhoComGasolina de 480 quilômetros.<br>");
+    document.write("Qual é o consumoDeGasolina?<br>");
+    document.write("Com álcool, um tanque de 40 litros fez um caminhoComAlcool de 300 quilômetros<br>");
+    document.write("Qual é o consumoDeAlcool?");
+    var caminhoComGasolina = 480;
+    var caminhoComAlcool = 300;
+    var tanqueDoCarro = 40;
+    var quantidadeDeLitroDeGasolina = Math.round(caminhoComGasolina / tanqueDoCarro);
+    var qauntidadeDeLitrosDeAlcool = Math.round(caminhoComAlcool / tanqueDoCarro);
+    document.write("<br>");
+    document.write("A quatidade de litros de gasolina para " + caminhoComGasolina + " km é " + quantidadeDeLitroDeGasolina + " litros");
+    document.write("<br>");
+    document.write("A quatidade de litros de Alcool para " + caminhoComAlcool + " km é " + qauntidadeDeLitrosDeAlcool + " litros");
+</script>
