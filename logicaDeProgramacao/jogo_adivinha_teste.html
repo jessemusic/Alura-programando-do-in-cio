@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia() {
+        return Math.round(Math.random() * 100);
+    }
+
+    var numeroPensado = sorteia();
+    console.log(numeroPensado);
+    var numeroChute = parseInt(prompt("Vamos ver se você acerta!. Chute um número de 1 a 100"));
+    if (numeroChute == numeroPensado) {
+        mostra("Uau Você acertou! Parebéns!")
+    } else {
+        mostra("Você errou, o número pensado foi " + numeroPensado);
+    }
+</script>

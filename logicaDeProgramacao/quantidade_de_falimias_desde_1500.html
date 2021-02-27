@@ -1,0 +1,10 @@
+<meta charset="UTF-8">
+<script>
+    document.write("Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média,<br> se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, <br>a segunda em 1556 e assim por diante. Desde 1500 até o ano atual, quantas gerações se passaram?");
+    var anoReferencia = 1500;
+    var anoAtual = 2021
+    var idadeMediaParaTerFilhos = 28;
+    var quantidadeDeFamilias = (anoAtual - anoReferencia) / idadeMediaParaTerFilhos;
+    document.write("<br>");
+    document.write("A quantidade de famílias desde " + anoReferencia + " até este ano de " + anoAtual + " é de " + Math.round(quantidadeDeFamilias) + " famílias espalhadas no país.");
+</script>
