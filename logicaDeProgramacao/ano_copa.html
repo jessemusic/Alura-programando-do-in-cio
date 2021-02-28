@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+    alert("Vamos começar ver os anos da copa do mundo?");
+    mostra("Começo!");
+    for (anoCopa = 1930; anoCopa <= 2021; anoCopa += 4) {
+        mostra("teve copa em " + anoCopa);
+    }
+    mostra("FIM!");
+    // O mesmo com while
+    anoCopa = 1930;
+    mostra("começou o while!")
+    while (anoCopa <= 2021) {
+        mostra("teve copa em " + anoCopa);
+        anoCopa += 4;
+    }
+    mostra("Fim do while!");
+</script>

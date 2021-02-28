@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+    var numero = 20;
+    while (numero <= 20) {
+        mostra(numero);
+        numero--;
+        if (numero < 0) {
+            mostra("FIM!");
+            break;
+        }
+
+    }
+    mostra("Outra forma de fazer!")
+    var numero = 20;
+    while (numero >= 0) {
+        mostra(numero);
+        numero--;
+    }
+    mostra("fim");
+</script>

@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+    var numeroPar = 1
+    while (numeroPar <= 50) {
+        mostra(numeroPar * 2);
+        numeroPar += 1;
+    }
+    mostra("FIM!");
+    mostra("Outro jeito!")
+    var numeroPar = 2
+    while (numeroPar <= 100) {
+        mostra(numeroPar);
+        numeroPar += 2;
+    }
+    mostra("FIM!");
+    mostra("Todos os números entre 30 a 40, exceto 33 e 37!")
+    var numero = parseInt(30);
+    while (numero <= 40) {
+        if (numero == 33) {
+            numero += 1;
+        }
+        if (numero == 37) {
+            numero += 1;
+        }
+        mostra(numero);
+        numero += 1;
+    }
+    mostra("FIM!");
+</script>
