@@ -1,0 +1,63 @@
+<canvas width="600" height="400"></canvas>
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    var raio = 10;
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var desenhaOuNao = false;
+
+    function desenhaBolinha(evento) {
+        if (desenhaOuNao) {
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            if (evento.shiftKey) {
+                raio += 10;
+            }
+            if (evento.altKey) {
+                raio -= 5;
+                if (raio <= 10) {
+                    raio = 10;
+                }
+            }
+            if (onmousedown) {
+                alert('clicou mouse boão esquerdo');
+            }
+            pincel.fillStyle = cores[color];
+            pincel.beginPath();
+            pincel.arc(x, y, raio, 0, 2 * 3.14);
+            pincel.fill();
+
+            console.log(x + " , " + y);
+        }
+    }
+
+    tela.onmousemove = desenhaBolinha;
+
+    function habilitaDesenhar() {
+        desenhaOuNao = true;
+    }
+
+    function desabilitaDesenhar() {
+        desenhaOuNao = false;
+    }
+    tela.onmousedown = habilitaDesenhar;
+    tela.onmouseup = desabilitaDesenhar;
+
+    var cores = ['lawngreen', 'lightblue', 'lightgray', 'lightpink', 'darkmagenta', 'darkred', 'darkolivegreen', 'cyan', 'chocolate', 'cornsilk', 'red', 'fuchsia'];
+    var color = 0;
+
+    function mudaCor() {
+
+        color += 1;
+        if (color >= cores.length) {
+            color = 0;
+        }
+
+        return cores[color];
+    }
+
+    tela.oncontextmenu = mudaCor;
+</script>
