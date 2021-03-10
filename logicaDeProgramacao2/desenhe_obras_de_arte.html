@@ -47,7 +47,7 @@
 
         desenha = false;
     }
-    // espaço área dos quadrados das paletas de cores
+
     function podeDesenharNaArea(x, y) {
 
         if (x >= 0 && x < 3 * tamanhoQuadrados &&
@@ -64,9 +64,7 @@
         var x = evento.pageX - tela.offsetLeft;
         var y = evento.pageY - tela.offsetTop;
 
-        // cada condição muda a variável `corAtual`
 
-        // começamos pela condição do y que é igual em todos os casos
         if (y > yQuadrados && y < yQuadrados + tamanhoQuadrados) {
 
             if (x > xVermelho && x < xVermelho + tamanhoQuadrados) {
@@ -98,7 +96,7 @@
     var yQuadrados = 0;
     var tamanhoQuadrados = 50;
 
-    desenhaPaletaDeCores(); // mostra os quadrados de seleção de cores
+    desenhaPaletaDeCores();
 
     tela.onmousemove = lidaComMovimentoDoMouse;
 
