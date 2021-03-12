@@ -1,0 +1,8 @@
+O que é HTTP? Ver primeiro vídeo 6min
+A web segura - HTTPS 11min
+Endereços sob seu domínio 10min
+O cliente pede e o servidor responde 10min
+Depurando a requisição HTTP 17min
+Parâmetros da requisição 15min
+Serviços na web com REST 17min
+HTTP2 - Por uma web mais eficiente
