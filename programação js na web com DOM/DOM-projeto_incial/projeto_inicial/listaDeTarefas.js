@@ -48,9 +48,16 @@
         const botaoDeleta = document.createElement('button')
 
         botaoDeleta.innerText = 'deletar'
-        botaoDeleta.addEventListener('click', () => {
-            console.log('fui clicado pra remover')
-        })
+        botaoDeleta.addEventListener('click', deletarTarefa)
+        return botaoDeleta
+    }
+
+    const deletarTarefa = (evento) => {
+        const botaoDeleta = evento.target
+        const tarefaCompleta = botaoDeleta.parentElement
+        tarefaCompleta.remove()
+
+
         return botaoDeleta
     }
 })()
